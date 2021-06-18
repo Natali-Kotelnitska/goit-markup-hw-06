@@ -360,7 +360,7 @@
     <!--Футер-->
     <footer class="footer">
         <div class="container footer-box">
-            <div class="address-box">
+            <div>
         <a href="/index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
     <!--Address-->
     <address class="address">
@@ -404,19 +404,64 @@
                 </li>
             </ul>
         </div>
+        <div class="footer-form-box">
+            <b class="title">Подпишитесь на рассылку</b>
+            <div class="footer-form-field">
+                <input type="email" name="mail" id="mail" placeholder="E-mail">
+                
+                <button type="submit" class="button btn-footer">Подписаться</button>
+            </div>
         </div>
+    
     </footer>
     
     <!-- BACKDROP - Модальне вікно-->
-    
-        <div class="backdrop is-hidden " data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                
+                <!-- CLOSE- BUTTON -->
                 <button data-modal-close class="btn-icon">
                 <svg class="cross-icon" width="18" height="18">
                     <use href="./images/icons/icons.svg#icon-cross"></use>
                 </svg>
                 </button>
+
+                <!-- FORM -->
+                <form action="" class="form">
+                    <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+                    <div class="form-field">
+                        <label class="form-label" for="name">Имя</label>
+                        <input type="text" name="name" id="name" required minlength="3">
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/icons/icons.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label for="tel">Телефон</label>
+                        <input type="tel" name="tel" id="tel" required>
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/icons/icons.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label for="mail">Почта</label required>
+                        <input type="email" name="mail" id="mail">
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/icons/icons.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
+                    <div class="textarea-field">
+                        <label for="comment">Комментарий</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                    </div>
+    
+                        <label for="policy" class="policy-field" required>
+                            <input class="check-input" type="checkbox" name="policy" id="policy">
+                            <span class="icon"></span>
+                            Соглашаюсь с рассылкой и принимаю<a href="" class="policy-link">Условия договора</a>
+                        </label>
+                    
+                    <button type="submit" class="button form-button">Отправить</button>
+                </form>
               
             </div>
         </div>

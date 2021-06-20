@@ -407,12 +407,12 @@
         <div class="footer-form-box">
             <b class="title">Подпишитесь на рассылку</b>
             <div class="footer-form-field">
-                <input type="email" name="mail" id="mail" placeholder="E-mail">
+                <input type="email" name="email" id="email" placeholder="E-mail">
                 
                 <button type="submit" class="button btn-footer">Подписаться</button>
             </div>
         </div>
-    
+    </div>
     </footer>
     
     <!-- BACKDROP - Модальне вікно-->
@@ -420,13 +420,13 @@
             <div class="modal">
                 <!-- CLOSE- BUTTON -->
                 <button data-modal-close class="btn-icon">
-                <svg class="cross-icon" width="18" height="18">
+                <svg class="cross-icon" width="11" height="11">
                     <use href="./images/icons/icons.svg#icon-cross"></use>
                 </svg>
                 </button>
 
                 <!-- FORM -->
-                <form action="" class="form">
+                <form class="form">
                     <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
                     <div class="form-field">
                         <label class="form-label" for="name">Имя</label>
@@ -443,7 +443,7 @@
                         </svg>
                     </div>
                     <div class="form-field">
-                        <label for="mail">Почта</label required>
+                        <label for="mail">Почта</label>
                         <input type="email" name="mail" id="mail">
                         <svg class="form-icon" width="18" height="18">
                             <use href="./images/icons/icons.svg#icon-email-black"></use>
@@ -454,7 +454,7 @@
                         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
                     </div>
     
-                        <label for="policy" class="policy-field" required>
+                        <label for="policy" class="policy-field">
                             <input class="check-input" type="checkbox" name="policy" id="policy">
                             <span class="icon"></span>
                             Соглашаюсь с рассылкой и принимаю<a href="" class="policy-link">Условия договора</a>
@@ -468,4 +468,4 @@
         
         <script src="./js/modal.js"></script>
 </body>
-</html>  
+</html>     

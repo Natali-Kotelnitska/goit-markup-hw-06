@@ -130,6 +130,7 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+
 .logo-header {
   color: var(--primary-black-color);
 
@@ -137,8 +138,8 @@ body {
 }
 .logo:hover,
 .logo:focus,
-.logo-header:hover,
-.logo-header:focus {
+.logo__text--black:hover,
+.logo__text--black:focus {
   color: var(--accent-color);
 }
 
@@ -382,8 +383,7 @@ body {
 .work-list-text {
   position: absolute;
   bottom: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  height: 70px;
 
   width: 100%;
   display: flex;
@@ -789,11 +789,12 @@ body {
 .form .textarea-field {
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 20px;
 }
 .form textarea {
   resize: none;
   padding: 12px 16px;
-  margin-bottom: 20px;
 
   border: 1px solid var(--input-textarea-border);
   border-radius: 4px;
@@ -808,7 +809,7 @@ body {
 }
 /* FORM CHECKBOX POLICY*/
 .form .policy-field {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;

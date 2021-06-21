@@ -138,8 +138,8 @@ body {
 }
 .logo:hover,
 .logo:focus,
-.logo__text--black:hover,
-.logo__text--black:focus {
+.logo-header:hover,
+.logo-header:focus {
   color: var(--accent-color);
 }
 
